@@ -27,4 +27,5 @@ class Clanak extends Model
     {
         return $this->hasMany(Komentar::class);
     }
+    
 }

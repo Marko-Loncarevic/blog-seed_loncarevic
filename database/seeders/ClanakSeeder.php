@@ -9,11 +9,13 @@ class ClanakSeeder extends Seeder
 {
     public function run(): void
     {
+        // Kreiraj 20 laznih clanaka
         Clanak::factory()->count(50)->create();
-    
+
+        // Dodaj jedan specifican clanak koji sigurno postoji
         Clanak::create([
             'naslov'     => 'Dobrodosli na nas blog!',
-            'sadrzaj'    => 'Ovo je uvodni clanak...',
+            'sadrzaj'    => 'Ovo je uvodni clanak bloga. Ovdje cete pronaci razne teme iz svijeta tehnologije, sporta i kulture.',
             'autor'      => 'Urednik',
             'kategorija' => 'opce',
             'objavljeno' => true,
